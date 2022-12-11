@@ -16,16 +16,21 @@ Tang Nano 9K top level module for vectrex
 ```
 
 - 展開してできた下記フォルダを，vectrex_project/src/に中身ごとコピーする．
- -- rtl_dar, rtl_jkent, rtl_mikej, rtl_pace
+```
+cp -a rtl_dar rtl_jkent rtl_mikej rtl_pace vectrex_project/src/
+```
 - ROMデータのvhdlファイルを用意して，romフォルダを作成してそこに置く．
- -- rom/vectrex_exec_prom.vhd (必須)
- -- rom/vectrex_scramble_prom.vhd (ゲームROMデータの例)
+```
+mkdir vectrex_project/src/rom
+cp rom/vectrex_exec_prom.vhd vectrex_project/src/rom/ (必須)
+cp rom/vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの例)
+```
 - Gawin EDAでvectrex_project.gprjをビルドする
 -- ROMデータのファイルは，プロジェクトに適宜追加・削除して下さい．
 
 ## ROMデータについて
 - 必要なROMデータは何らかの方法で入手して，オリジナルのパッケージに含まれるREADME.TXTに従ってvhdlファイルを作成して下さい．
--- romの名前，サイズに応じて，rtl_dar/vectrex.vhdの修正が必要です．
+- romの名前，サイズに応じて，rtl_dar/vectrex.vhdの修正が必要です．
 
 ## 周辺回路について
 - VGA出力，音声出力，キー入力は，hardware/tangnano9k-vectrex-peri-schematics.pdf の回路で動きました．
