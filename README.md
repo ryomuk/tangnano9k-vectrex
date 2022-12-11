@@ -7,11 +7,14 @@ Tang Nano 9K top level module for vectrex
 
 ## コンパイル方法
 - SourceForgeにある vhdl_vectrex_rev_0_2_2018_06_12.zip を展開する．
--- README.TXTにある下記のことに注意して下さい．
---- Educational use only
---- Do not redistribute synthetized file with roms
---- Do not redistribute roms whatever the form
---- Use at your own risk
+- README.TXTにあように，下記のことを理解した上でご使用下さい．
+```
+- Educational use only
+- Do not redistribute synthetized file with roms
+- Do not redistribute roms whatever the form
+- Use at your own risk
+```
+
 - 展開してできた下記フォルダを，vectrex_project/src/に中身ごとコピーする．
  -- rtl_dar, rtl_jkent, rtl_mikej, rtl_pace
 - ROMデータのvhdlファイルを用意して，romフォルダを作成してそこに置く．
