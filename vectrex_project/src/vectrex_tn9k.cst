@@ -1,0 +1,45 @@
+// Pin assign for Tang Nano 9K
+IO_LOC "clk" 52;	// 27MHz clock
+
+//IO_LOC "txd_o" 17; 	// TXD to USB
+//IO_LOC "rxd_i" 18;	// RXD from USB
+
+IO_LOC "sw_S1" 4;	// Tactile Switch S1
+IO_LOC "sw_S2" 3;	// Tactile Switch S2
+
+IO_LOC  "gpout[0]" 70;
+IO_LOC  "gpout[1]" 71;
+IO_LOC  "gpout[2]" 72;
+IO_LOC  "gpout[3]" 73;
+IO_LOC  "gpout[4]" 74;
+IO_LOC "gpout[5]" 75;
+IO_LOC "gpout[6]" 76;
+IO_LOC "gpout[7]" 77;
+
+IO_LOC "gpin[0]" 28;
+IO_LOC "gpin[1]" 27;
+IO_LOC "gpin[2]" 26;
+IO_LOC "gpin[3]" 25;
+IO_LOC "gpin[4]" 39;
+IO_LOC "gpin[5]" 36;
+IO_LOC "gpin[6]" 37;
+IO_LOC "gpin[7]" 38;
+
+// LEDs (Negative logic) They lit with '0'.
+IO_LOC 	"led[0]" 10;
+IO_PORT "led[0]"  IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC  "led[1]" 11;
+IO_PORT "led[1]"  IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC  "led[2]" 13;
+IO_PORT "led[2]"  IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC  "led[3]" 14;
+IO_PORT "led[3]"  IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC  "led[4]" 15;
+IO_PORT "led[4]"  IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+IO_LOC  "led[5]" 16;
+IO_PORT "led[5]"  IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
