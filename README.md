@@ -24,7 +24,7 @@ mkdir vectrex_project/src/rom
 cp vectrex_exec_prom.vhd vectrex_project/src/rom/ (必須)
 cp vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの例)
 ```
-4. Gawin EDAでvectrex_project.gprjをビルドする．
+4. Gowin EDAでプロジェクト vectrex_project.gprj を開いてビルドする．
 (ROMデータのファイルは，プロジェクトに適宜追加・削除して下さい．)
 
 ## ROMデータについて
