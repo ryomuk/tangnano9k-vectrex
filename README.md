@@ -4,7 +4,7 @@ Tang Nano 9K top level module for vectrex
 ## 概要
 - Tang Nano 9K用のトップレベルモジュールです．
 - [SourceForge DarFPGA](https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/)にあったDE10-lite用のソースを改変して作りました．
-- README.TXTにあように，下記のことを理解した上でご使用下さい．
+- オリジナルのパッケージのREADME.TXTにあるように，下記のことを理解した上でご使用下さい．
 ```
 - Educational use only
 - Do not redistribute synthetized file with roms
