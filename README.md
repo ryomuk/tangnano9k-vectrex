@@ -3,14 +3,18 @@ Tang Nano 9K top level module for vectrex
 
 ## 概要
 - Tang Nano 9K用のトップレベルモジュールです．
-- SourceForgeにあったDE10-lite用のソースを改変して作りました．
+- SourceForge( https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/ )にあったDE10-lite用のソースを改変して作りました．
 
 ## コンパイル方法
-- https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/
-にある"vhdl_vectrex_rev_0_2_2018_06_12.zip"を展開する．
+- SourceForgeにある vhdl_vectrex_rev_0_2_2018_06_12.zip を展開する．
+-- README.TXTにある下記のことに注意して下さい．
+--- Educational use only
+--- Do not redistribute synthetized file with roms
+--- Do not redistribute roms whatever the form
+--- Use at your own risk
 - 展開してできた下記フォルダを，vectrex_project/src/に中身ごとコピーする．
  -- rtl_dar, rtl_jkent, rtl_mikej, rtl_pace
-- ROMデータのvhdlファイルを用意して，下記フォルダに置く．
+- ROMデータのvhdlファイルを用意して，romフォルダを作成してそこに置く．
  -- rom/vectrex_exec_prom.vhd (必須)
  -- rom/vectrex_scramble_prom.vhd (ゲームROMデータの例)
 - Gawin EDAでvectrex_project.gprjをビルドする
