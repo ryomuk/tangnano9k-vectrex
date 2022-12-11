@@ -5,12 +5,10 @@ Tang Nano 9K top level module for vectrex
 - Tang Nano 9K用のトップレベルモジュールと，周辺回路の回路図です．
 - [SourceForge DarFPGA](https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/)にあったDE10-lite用のソースを改変して作りました．
 - オリジナルのパッケージのREADME.TXTにあるように，下記のことを理解した上でご使用下さい．
-```
 - Educational use only
 - Do not redistribute synthetized file with roms
 - Do not redistribute roms whatever the form
 - Use at your own risk
-```
 ## コンパイル方法
 
 1. [SourceForge DarFPGA](https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/)にある vhdl_vectrex_rev_0_2_2018_06_12.zip を展開する．
