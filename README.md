@@ -10,7 +10,9 @@ Tang Nano 9K top level module for vectrex
 にある"vhdl_vectrex_rev_0_2_2018_06_12.zip"を展開する．
 - 展開してできた下記フォルダを，vectrex_project/src/に中身ごとコピーする．
  -- rtl_dar, rtl_jkent, rtl_mikej, rtl_pace
-- ROMデータを用意する．
+- ROMデータのvhdlファイルを用意して，下記フォルダに置く．
+ -- rom/vectrex_exec_prom.vhd (必須)
+ -- rom/vectrex_scramble_prom.vhd (ゲームROMデータの例)
 - Gawin EDAでvectrex_project.gprjをビルドする
 -- ROMデータのファイルは，プロジェクトに適宜追加・削除して下さい．
 
