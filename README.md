@@ -2,7 +2,7 @@
 Tang Nano 9K top level module for vectrex
 
 ## 概要
-- Tang Nano 9K用のトップレベルモジュールです．
+- Tang Nano 9K用のトップレベルモジュールと，周辺回路の回路図です．
 - [SourceForge DarFPGA](https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/)にあったDE10-lite用のソースを改変して作りました．
 - オリジナルのパッケージのREADME.TXTにあるように，下記のことを理解した上でご使用下さい．
 ```
@@ -32,7 +32,8 @@ cp vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの�
 - romの名前，サイズに応じて，rtl_dar/vectrex.vhdを適宜修正して下さい．(やり方はソースのコメントに書いてあります．)
 
 ## 周辺回路について
-- VGA出力，音声出力，キー入力は，hardware/tangnano9k-vectrex-peri-schematics.pdf の回路で動きました．
+- VGA出力，音声出力，キー入力は，
+[hardware/tangnano9k-vectrex-peri-schematics.pdf](hardware/tangnano9k-vectrex-peri-schematics.pdf)の回路で動きました．
 - たまたま手元にあった部品を使って作っただけなので，これが推奨回路というわけではありません．
 
 ## その他
