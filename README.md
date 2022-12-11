@@ -6,7 +6,7 @@ Tang Nano 9K top level module for vectrex
 - SourceForge( https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/ )にあったDE10-lite用のソースを改変して作りました．
 
 ## コンパイル方法
-- SourceForgeにある vhdl_vectrex_rev_0_2_2018_06_12.zip を展開する．
+1. SourceForgeにある vhdl_vectrex_rev_0_2_2018_06_12.zip を展開する．
 - README.TXTにあように，下記のことを理解した上でご使用下さい．
 ```
 - Educational use only
@@ -15,18 +15,18 @@ Tang Nano 9K top level module for vectrex
 - Use at your own risk
 ```
 
-- 展開してできた下記フォルダを，vectrex_project/src/に中身ごとコピーする．
+2. 展開してできた下記フォルダを，vectrex_project/src/に中身ごとコピーする．
 ```
 cp -a rtl_dar rtl_jkent rtl_mikej rtl_pace vectrex_project/src/
 ```
-- ROMデータのvhdlファイルを用意して，romフォルダを作成してそこに置く．
+3. ROMデータのvhdlファイルを用意して，romフォルダを作成してそこに置く．
 ```
 mkdir vectrex_project/src/rom
-cp rom/vectrex_exec_prom.vhd vectrex_project/src/rom/ (必須)
-cp rom/vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの例)
+cp vectrex_exec_prom.vhd vectrex_project/src/rom/ (必須)
+cp vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの例)
 ```
-- Gawin EDAでvectrex_project.gprjをビルドする
--- ROMデータのファイルは，プロジェクトに適宜追加・削除して下さい．
+4. Gawin EDAでvectrex_project.gprjをビルドする
+- ROMデータのファイルは，プロジェクトに適宜追加・削除して下さい．
 
 ## ROMデータについて
 - 必要なROMデータは何らかの方法で入手して，オリジナルのパッケージに含まれるREADME.TXTに従ってvhdlファイルを作成して下さい．
