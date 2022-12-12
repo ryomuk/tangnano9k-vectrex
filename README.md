@@ -38,4 +38,3 @@ cp vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの�
 
 ## その他
 - 27MHzのクロックを25MHzとして使っています．Tang NanoのPLLで25MHzのクロックが作れるかもしれないのでその方がいいかも．(私はPLLの使い方を知らないのと，IPを使いたくなかったので27MHzのクロックのまま使っています．)
-
