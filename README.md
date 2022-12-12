@@ -33,6 +33,8 @@ cp vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの�
 - VGA出力，音声出力，キー入力は，
 [hardware/tangnano9k-vectrex-peri-schematics.pdf](hardware/tangnano9k-vectrex-peri-schematics.pdf)の回路で動きました．
 - たまたま手元にあった部品を使って作っただけなので，これが推奨回路というわけではありません．
+- VGAの信号のバッファに74HC541を3.3Vで使ったけど，ちゃんと入力レベルと出力レベルを考慮した部品を使うべきかも．
+- RGB信号に抵抗(150オームぐらい?)が必要かも．
 
 ## その他
 - 27MHzのクロックを25MHzとして使っています．Tang NanoのPLLで25MHzのクロックが作れるかもしれないのでその方がいいかも．(私はPLLの使い方を知らないのと，IPを使いたくなかったので27MHzのクロックのまま使っています．)
