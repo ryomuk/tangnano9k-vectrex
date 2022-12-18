@@ -9,6 +9,7 @@ Tang Nano 9K top level module for vectrex
   - Do not redistribute synthetized file with roms
   - Do not redistribute roms whatever the form
   - Use at your own risk
+
 ## コンパイル方法
 
 1. [SourceForge DarFPGA](https://sourceforge.net/projects/darfpga/files/Software%20VHDL/vectrex/)にある vhdl_vectrex_rev_0_2_2018_06_12.zip を展開する．
@@ -35,6 +36,8 @@ cp vectrex_scramble_prom.vhd vectrex_project/src/rom/ (ゲームROMデータの�
 - たまたま手元にあった部品を使って作っただけなので，これが推奨回路というわけではありません．
 - VGAの信号のバッファに74HC541を3.3Vで使ったけど，ちゃんと入力レベルと出力レベルを考慮した部品を使うべきかも．
 - RGB信号に抵抗(150オームぐらい?)が必要かも．
+- もしかしたらVGAをHDMI出力にして音声もそこから出せるような気がしますが，そのあたりの知見が無いので試せていません．
 
 ## その他
 - 27MHzのクロックを25MHzとして使っています．Tang NanoのPLLで25MHzのクロックが作れるかもしれないのでその方がいいかも．(私はPLLの使い方を知らないのと，IPを使いたくなかったので27MHzのクロックのまま使っています．)
+- このプロジェクトはあくまでFPGAを使う練習用の試みなので，バグ等があってもメンテナンスをする予定はありません．
